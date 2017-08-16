@@ -1,0 +1,7 @@
+terraform {
+  backend "s3" {
+    bucket = "vpcciadev.remotestate.stanford.edu"
+    key    = "vpcCIADEV.tfstate"
+    region = "us-west-2"
+  }
+}
